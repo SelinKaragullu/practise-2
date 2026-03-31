@@ -1,9 +1,9 @@
 import React from "react";  
 
-export default function Search ({search,setSearch}) {
+export default function Search ({search,setSearch,fetchWeatherData}) {
 
 function handleSearch () {
-console.log(search)
+fetchWeatherData(search)
 }
 
   return (
