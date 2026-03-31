@@ -1,15 +1,15 @@
 import React from "react";  
 
-export default function Search () {
+export default function Search ({search,setSearch}) {
 
-function handleSearch (event) {
-  console.log(event.target.value)
+function handleSearch () {
+console.log(search)
 }
 
   return (
     <>
     <input type="text"
-    onChange={event.target.value}
+    onChange={(event)=>setSearch(event.target.value)}
     value={search}
     
     />

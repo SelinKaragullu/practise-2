@@ -6,6 +6,6 @@ export default function Weather () {
 const [search,setSearch] = useState("")
 
   return (
-    <Search search={search}/>
+    <Search search={search} setSearch={setSearch}/>
   )
 }
